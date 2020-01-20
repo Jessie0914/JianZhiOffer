@@ -11,17 +11,17 @@
  */
 public class _____Solution55 {
     public ListNode EntryNodeOfLoop(ListNode pHead) {
-        if (pHead==null || pHead.next==null)
+        if (pHead == null || pHead.next == null)
             return null;
 
         ListNode p1 = pHead;
         ListNode p2 = pHead.next;
-        while (p1!=p2 && p2!=null && p2.next!=null){
+        while (p1 != p2 && p2 != null && p2.next != null) {
             p1 = p1.next;
             p2 = p2.next.next;
         }
 
-        if (p2==null || p2.next==null)
+        if (p2 == null || p2.next == null)
             return null;
 
         // 剩下的情况是必有环的，只不过不知道哪个是入口的结点
@@ -29,17 +29,17 @@ public class _____Solution55 {
         // 先确定环的长度
         ListNode dummy = p2;
         int lenOfCircle = 1;
-        while (dummy.next!=p2){
+        while (dummy.next != p2) {
             lenOfCircle++;
             dummy = dummy.next;
         }
 
         p1 = p2 = pHead;
-        for (int i=0;i<lenOfCircle;i++){
+        for (int i = 0; i < lenOfCircle; i++) {
             p2 = p2.next;
         }
 
-        while (p1!=p2){
+        while (p1 != p2) {
             p1 = p1.next;
             p2 = p2.next;
         }
