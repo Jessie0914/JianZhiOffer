@@ -1,5 +1,5 @@
 /**
- * @ClassName Solution61
+ * @ClassName __________Solution61
  * @Description 序列化二叉树
  * @Author shishi
  * @Date 2020/1/20 16:04
@@ -14,7 +14,7 @@
  * <p>
  * 二叉树的反序列化是指：根据某种遍历顺序得到的序列化字符串结果str，重构二叉树。
  */
-public class Solution61 {
+public class __________Solution61 {
     int index = -1;
 
     public String Serialize(TreeNode root) {

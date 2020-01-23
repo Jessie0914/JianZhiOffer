@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution61Test {
 
 
@@ -21,7 +19,7 @@ public class Solution61Test {
         treeNode3.left = treeNode5;
         treeNode3.right = treeNode6;
 
-        Solution61 solution61 = new Solution61();
+        __________Solution61 solution61 = new __________Solution61();
         String serialize = solution61.Serialize(treeNode1);
         System.out.println(serialize);
         TreeNode deserialize = solution61.Deserialize(serialize);
