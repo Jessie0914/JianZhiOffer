@@ -1,5 +1,5 @@
 /**
- * @ClassName Solution66
+ * @ClassName _____Solution66
  * @Description 机器人的运动范围
  * @Author shishi
  * @Date 2020/1/23 20:50
@@ -11,7 +11,7 @@
  * 例如，当k为18时，机器人能够进入方格（35,37），因为3+5+3+7 = 18。
  * 但是，它不能进入方格（35,38），因为3+5+3+8 = 19。请问该机器人能够达到多少个格子？
  */
-public class Solution66 {
+public class _____Solution66 {
     boolean[][] visited;
 
     public int movingCount(int threshold, int rows, int cols) {
