@@ -1,8 +1,7 @@
+import first_time.Solution64;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 public class Solution64Test {
 

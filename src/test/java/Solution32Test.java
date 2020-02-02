@@ -1,3 +1,4 @@
+import first_time.___Solution32;
 import org.junit.Test;
 
 public class Solution32Test {

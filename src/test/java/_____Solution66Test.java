@@ -1,6 +1,5 @@
+import first_time._____Solution66;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class _____Solution66Test {
 

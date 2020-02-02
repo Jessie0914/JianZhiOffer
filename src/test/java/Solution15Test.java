@@ -1,7 +1,6 @@
-import com.sun.xml.internal.fastinfoset.algorithm.HexadecimalEncodingAlgorithm;
+import first_time.ListNode;
+import first_time.Solution15;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution15Test {
 

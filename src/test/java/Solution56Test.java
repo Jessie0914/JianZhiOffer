@@ -1,3 +1,5 @@
+import first_time.ListNode;
+import first_time.___Solution56;
 import org.junit.Test;
 
 public class Solution56Test {

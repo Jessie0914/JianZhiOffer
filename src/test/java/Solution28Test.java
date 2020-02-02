@@ -1,6 +1,5 @@
+import first_time.Solution28;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution28Test {
 

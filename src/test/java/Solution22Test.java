@@ -1,8 +1,8 @@
+import first_time.Solution22;
+import first_time.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 public class Solution22Test {
 

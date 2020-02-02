@@ -1,6 +1,5 @@
+import first_time.__________Solution35;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class __________Solution35Test {
 

@@ -1,3 +1,4 @@
+import first_time.__________Solution51;
 import org.junit.Test;
 
 public class Solution51Test {

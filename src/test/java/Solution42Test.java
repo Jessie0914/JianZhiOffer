@@ -1,8 +1,7 @@
+import first_time.Solution42;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 public class Solution42Test {
 
