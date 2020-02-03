@@ -1,4 +1,4 @@
-package review;
+package second_time;
 
 /**
  * @ClassName _66
@@ -7,7 +7,6 @@ package review;
  * @Date 2020/2/2 23:03
  **/
 public class _66 {
-    // 2用到的
     int row;
     int col;
     int count = 0;
