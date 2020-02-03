@@ -1,4 +1,5 @@
-package first_time; /**
+package first_time;
+/**
  * @ClassName __________Solution61
  * @Description 序列化二叉树
  * @Author shishi
@@ -26,7 +27,7 @@ public class __________Solution61 {
         }
     }
 
-    TreeNode Deserialize(String str) {
+    public TreeNode Deserialize(String str) {
 
         String[] s = str.split(",");//将序列化之后的序列用，分隔符转化为数组
         index++;//索引每次加一

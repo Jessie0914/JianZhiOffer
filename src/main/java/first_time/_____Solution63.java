@@ -1,5 +1,5 @@
 package first_time; /**
- * @ClassName Solution63
+ * @ClassName _____Solution63
  * @Description 数据流中的中位数
  * @Author shishi
  * @Date 2020/1/20 17:38
@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
  * 如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
  * 我们使用Insert()方法读取数据流，使用GetMedian()方法获取当前读取数据的中位数。
  */
-public class Solution63 {
+public class _____Solution63 {
     // 用到的是大顶堆+小顶堆
 
     // 小顶堆中存放的是大的元素
