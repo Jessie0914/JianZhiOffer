@@ -24,21 +24,18 @@ public class _____Solution41 {
         int i = 1;
         int j = 2;
 
-        while (i<j){
+        while (i < j) {
             int temp = (i + j) * (j - i + 1) / 2;
-            if (temp==sum) {
+            if (temp == sum) {
                 ArrayList<Integer> arrayList = new ArrayList<>();
-                for (int index = i;index<=j;index++){
+                for (int index = i; index <= j; index++) {
                     arrayList.add(index);
                 }
                 list.add(arrayList);
                 i++;
-            }
-
-            else if (temp<sum){
+            } else if (temp < sum) {
                 j++;
-            }
-            else
+            } else
                 i++;
         }
 
