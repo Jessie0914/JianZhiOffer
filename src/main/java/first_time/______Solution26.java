@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class ______Solution26 {
     public TreeNode Convert(TreeNode pRootOfTree) {
-        if (pRootOfTree==null) return null;
+        if (pRootOfTree == null) return null;
 
         ArrayList<TreeNode> list = new ArrayList<>();
 
@@ -24,12 +24,12 @@ public class ______Solution26 {
         // 遍历list，修改指针
         for (int i = 0; i < list.size(); i++) {
             TreeNode cur = list.get(i);
-            if (i-1>=0)
-                cur.left = list.get(i-1);
+            if (i - 1 >= 0)
+                cur.left = list.get(i - 1);
             else cur.left = null;
 
-            if (i+1<list.size())
-                cur.right = list.get(i+1);
+            if (i + 1 < list.size())
+                cur.right = list.get(i + 1);
             else cur.right = null;
         }
 

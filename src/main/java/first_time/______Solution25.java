@@ -20,14 +20,14 @@ public class ______Solution25 {
         RandomListNode p1 = pHead;
 
         // 建立一个HashMap保存：旧节点--新建立的节点 之间的映射关系
-        while (p!=null){
-            hashMap.put(p,new RandomListNode(p.label));
+        while (p != null) {
+            hashMap.put(p, new RandomListNode(p.label));
             p = p.next;
         }
 
         // 然后遍历map，把next和random指针补充完整
         // 通过取map中的key（旧节点）得到value（新节点）
-        while (p1!=null){
+        while (p1 != null) {
             hashMap.get(p1).next = hashMap.get(p1.next);
             hashMap.get(p1).random = hashMap.get(p1.random);
             p1 = p1.next;
