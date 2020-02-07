@@ -8,12 +8,13 @@ package second_time;
  **/
 public class _33 {
     public int GetUglyNumber_Solution(int index) {
-        if (index<=0)
+        if (index <= 0)
             return 0;
         int[] nums = new int[index + 1];
         nums[0] = 0;
         nums[1] = 1;
 
+        // i j k分别代表x2 x3 x5的指针
         int i, j, k;
         i = j = k = 1;
         int p = 2;

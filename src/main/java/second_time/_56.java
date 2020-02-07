@@ -8,6 +8,7 @@ package second_time;
  **/
 public class _56 {
     public ListNode deleteDuplication(ListNode pHead) {
+        // 构造一个前置结点与pHead相连
         ListNode pre = new ListNode(-1);
         pre.next = pHead;
         ListNode dummyNode = pre;

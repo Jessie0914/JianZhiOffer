@@ -17,7 +17,7 @@ public class _52 {
         if (i != str.length && j == pattern.length)
             return false;
 
-        // 直接判断下一位是不是*
+        // 重点：直接判断下一位是不是*
         if (j + 1 < pattern.length && pattern[j + 1] == '*') {
             // 如果当前元素相等或者为.，那么就有2种选择
             if (i < str.length && (str[i] == pattern[j] || pattern[j] == '.'))

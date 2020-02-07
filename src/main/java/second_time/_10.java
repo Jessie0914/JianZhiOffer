@@ -7,7 +7,7 @@ package second_time;
  * @Date 2020/2/6 17:57
  **/
 public class _10 {
-    // 斐波那契数列
+    // 本质是斐波那契数列
     public int RectCover(int target) {
         int[] nums = new int[target + 1];
         if (target <= 0)

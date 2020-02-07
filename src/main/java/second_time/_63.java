@@ -20,16 +20,16 @@ public class _63 {
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
         @Override
         public int compare(Integer o1, Integer o2) {
-            return o2-o1;
+            return o2 - o1;
         }
     });
 
     public void Insert(Integer num) {
-        if (count%2==0){
+        if (count % 2 == 0) {
             count++;
             maxHeap.add(num);
             minHeap.add(maxHeap.poll());
-        }else {
+        } else {
             count++;
             minHeap.add(num);
             maxHeap.add(minHeap.poll());
@@ -37,9 +37,9 @@ public class _63 {
     }
 
     public Double GetMedian() {
-        if (count%2==1)
+        if (count % 2 == 1)
             return new Double(minHeap.peek());
         else
-            return new Double(minHeap.peek()+maxHeap.peek())/2;
+            return new Double(minHeap.peek() + maxHeap.peek()) / 2;
     }
 }

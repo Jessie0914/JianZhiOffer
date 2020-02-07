@@ -7,6 +7,7 @@ package second_time;
  * @Date 2020/2/4 13:53
  **/
 public class _48 {
+    // 用异或运算+（&+左移）
     public int Add(int num1,int num2) {
         while (num2!=0){
             int sum = num1 ^ num2;

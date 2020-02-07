@@ -49,6 +49,8 @@ public class _66 {
                 recursion(threshold, visited, i, j - 1);
             if (LegalPos(i, j + 1) && !visited[i][j + 1])
                 recursion(threshold, visited, i, j + 1);
+
+            visited[i][j] = false;
         }
     }
 

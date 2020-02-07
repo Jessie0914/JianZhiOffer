@@ -24,7 +24,7 @@ public class _55 {
             }
 
             // 然后让p1和p2同时走，相遇的地方就是入口节点
-            while (p1!=p2){
+            while (p1 != p2) {
                 p1 = p1.next;
                 p2 = p2.next;
             }
@@ -50,7 +50,6 @@ public class _55 {
                     this.len_Circle++;
                     slow = slow.next;
                 }
-
                 return true;
             }
             slow = slow.next;

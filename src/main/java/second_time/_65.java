@@ -2,7 +2,7 @@ package second_time;
 
 /**
  * @ClassName _65
- * @Description TODO
+ * @Description 矩阵中的路径
  * @Author shishi
  * @Date 2020/2/3 11:15
  **/
@@ -24,8 +24,10 @@ public class _65 {
 
         boolean[][] visited = new boolean[rows][cols];
 
+        // 因为可以从任意一个位置出发，所以需要每一个位置DFS一遍
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
+                // DFS函数
                 if (helper(visited, chars, i, j, str, 0))
                     return true;
             }
@@ -69,6 +71,7 @@ public class _65 {
         return false;
     }
 
+    // 判断有没有越界
     private boolean inArea(int i, int j) {
         if (i>=0 && i<row && j>=0 && j<col)
             return true;

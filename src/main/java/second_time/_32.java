@@ -17,6 +17,9 @@ public class _32 {
         for (int i = 0; i < len; i++) {
             strings[i] = String.valueOf(numbers[i]);
         }
+
+        // 排序规则
+        // S1+S2和S2+S1哪个小，就把哪个排在前面
         Arrays.sort(strings, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {

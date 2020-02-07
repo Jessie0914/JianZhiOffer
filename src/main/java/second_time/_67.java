@@ -7,6 +7,7 @@ package second_time;
  * @Date 2020/2/2 23:05
  **/
 public class _67 {
+    // 动态规划
     public int cutRope(int target) {
         int[] dp = new int[target + 1];
         dp[0] = 0;

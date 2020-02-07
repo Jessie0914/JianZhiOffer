@@ -6,6 +6,7 @@ package second_time;
  * @Author shishi
  * @Date 2020/2/4 15:11
  **/
+
 public class _36 {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         if (pHead1 == null || pHead2 == null)
@@ -16,6 +17,7 @@ public class _36 {
         while (p1 != p2) {
             p1 = p1.next;
             p2 = p2.next;
+            // 双重校验
             if (p1 != p2) {
                 if (p1 == null)
                     p1 = pHead2;

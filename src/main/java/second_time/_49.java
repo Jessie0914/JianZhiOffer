@@ -2,11 +2,12 @@ package second_time;
 
 /**
  * @ClassName _49
- * @Description 将字符串转换成整数
+ * @Description 把字符串转换成整数
  * @Author shishi
  * @Date 2020/2/4 16:44
  **/
 public class _49 {
+    // 注意点是：溢出判断
     public int StrToInt(String str) {
         int len = str.length();
         if (str == "" || len == 0)
@@ -30,7 +31,7 @@ public class _49 {
                 return 0;
             else {
                 int num = str.charAt(index) - '0';
-                // 判断有没有越界
+                // 判断有没有正溢出、负溢出
                 if (flag) {
                     if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && num > Integer.MAX_VALUE % 10))
                         return 0;

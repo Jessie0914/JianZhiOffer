@@ -10,13 +10,13 @@ import java.util.ArrayList;
  **/
 public class _41 {
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
-        int bound = (sum + 1) / 2;
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
         int i = 1;
         int j = 2;
 
-        while (i < j && j <= bound) {
+        // 当i追上了j，就到了边界
+        while (i < j) {
             int temp = (i + j) * (j - i + 1) / 2;
             if (temp==sum){
                 ArrayList<Integer> list = new ArrayList<>();

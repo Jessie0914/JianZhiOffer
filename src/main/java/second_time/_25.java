@@ -10,7 +10,7 @@ import java.util.HashMap;
  **/
 public class _25 {
     public RandomListNode Clone(RandomListNode pHead) {
-        // 存放新旧结点的映射关系
+        // 存放新结点----旧结点的映射关系
         HashMap<RandomListNode, RandomListNode> map = new HashMap<>();
         RandomListNode p = pHead;
         while (p != null) {

@@ -11,10 +11,11 @@ public class _35 {
         if (array == null || array.length < 2)
             return 0;
 
-        // 利用快排思想
+        // 利用归并排序思想
         return merge(array, 0, array.length - 1) % 1000000007;
     }
 
+    // 先分
     private int merge(int[] array, int low, int high) {
         if (low >= high)
             return 0;
@@ -26,12 +27,15 @@ public class _35 {
         return (left + right + mergeSort(array, low, mid, high)) % 1000000007;
     }
 
+    // 再归并
     private int mergeSort(int[] array, int low, int mid, int high) {
         int res = 0;
+
         int[] tempArr = new int[high - low + 1];
         int index = 0;
         int p1 = low;
         int p2 = mid + 1;
+
         while (p1 <= mid && p2 <= high) {
             if (array[p1] <= array[p2]) {
                 tempArr[index++] = array[p1++];
@@ -52,8 +56,9 @@ public class _35 {
             tempArr[index++] = array[p2++];
         }
 
-        for (int i = 0; i < tempArr.length; i++) {
-            array[low++] = tempArr[i];
+        // 放回原数组中
+        for (int aTempArr : tempArr) {
+            array[low++] = aTempArr;
         }
 
         return res;
