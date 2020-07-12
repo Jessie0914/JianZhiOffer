@@ -7,6 +7,7 @@ package first_time; /**
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 
 /**
  * 请实现一个函数用来找出字符流中第一个只出现一次的字符。
@@ -32,6 +33,5 @@ public class Solution54 {
 
         Iterator<Character> iterator = linkedhashMap.keySet().iterator();
         return iterator.next();
-
     }
 }

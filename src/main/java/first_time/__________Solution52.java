@@ -25,16 +25,16 @@ public class __________Solution52 {
 
         // 判断pattern的下一位是不是*
         if (j + 1 < pattern.length && pattern[j + 1] == '*') {
-            if (i < str.length && (str[i]==pattern[j] || pattern[j]=='.')){
+            if (i < str.length && (str[i] == pattern[j] || pattern[j] == '.')) {
                 // 匹配0个字符、或者当做是1个字符往后继续匹配
-                return recursion_match(str,i,pattern,j+2) || recursion_match(str,i+1,pattern,j);
-            }else {
-                return recursion_match(str,i,pattern,j+2);
+                return recursion_match(str, i, pattern, j + 2) || recursion_match(str, i + 1, pattern, j);
+            } else {
+                return recursion_match(str, i, pattern, j + 2);
             }
-        }else {
-            if (i<str.length && (str[i]==pattern[j] || pattern[j]=='.')){
-                return recursion_match(str,i+1,pattern,j+1);
-            }else {
+        } else {
+            if (i < str.length && (str[i] == pattern[j] || pattern[j] == '.')) {
+                return recursion_match(str, i + 1, pattern, j + 1);
+            } else {
                 return false;
             }
         }

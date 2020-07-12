@@ -25,30 +25,29 @@ public class Solution53 {
             i++;
         }
 
-        while (i<len && Character.isDigit(str[i])){
+        while (i < len && Character.isDigit(str[i])) {
             i++;
         }
 
-        if (i==len)
+        if (i == len)
             return true;
 
-        if (str[i]=='.'){
+        if (str[i] == '.') {
             i++;
-            if (i==len)
+            if (i == len)
                 return false;
 
-            while (i<len&&Character.isDigit(str[i])){
+            while (i < len && Character.isDigit(str[i])) {
                 i++;
             }
-            if (i==len)
+            if (i == len)
                 return true;
-            else if (str[i]=='e' || str[i]=='E')
-                return judgeAfterE(str,i+1);
+            else if (str[i] == 'e' || str[i] == 'E')
+                return judgeAfterE(str, i + 1);
             else
                 return false;
-        }
-        else if (str[i]=='e'||str[i]=='E')
-            return judgeAfterE(str,i+1);
+        } else if (str[i] == 'e' || str[i] == 'E')
+            return judgeAfterE(str, i + 1);
         else
             return false;
 
@@ -57,19 +56,19 @@ public class Solution53 {
     // 保证E后面的都是整数就行
     private boolean judgeAfterE(char[] str, int i) {
         int len = str.length;
-        if (i==len)
+        if (i == len)
             return false;
 
-        if (str[i]=='-'||str[i]=='+')
+        if (str[i] == '-' || str[i] == '+')
             i++;
 
-        if (i==len)
+        if (i == len)
             return false;
         // 判断后面的是整数即可，必须每一位都是数字
-        while (i<len&&Character.isDigit(str[i])){
+        while (i < len && Character.isDigit(str[i])) {
             i++;
         }
-        if (i==len)
+        if (i == len)
             return true;
         else
             return false;

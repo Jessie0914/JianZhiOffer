@@ -1,8 +1,6 @@
 package first_time;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * @ClassName Solution64
@@ -49,7 +47,7 @@ public class Solution64 {
 
     public ArrayList<Integer> maxInWindows2(int[] num, int size) {
         if (num == null || num.length == 0 || size <= 0 || num.length < size) {
-            return new ArrayList<Integer>();
+            return new ArrayList<>();
         }
         ArrayList<Integer> result = new ArrayList<>();
         //双端队列，用来记录每个窗口的最大值下标
@@ -70,5 +68,33 @@ public class Solution64 {
             }
         }
         return result;
+    }
+
+    // {2,3,4,2,6,2,5,1}及滑动窗口的大小3
+    public ArrayList<Integer> maxInWindows3(int[] num, int size) {
+        ArrayList<Integer> list = new ArrayList<>();
+        // 大顶堆
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+
+        int i=0;
+        while (i<num.length){
+            if (maxHeap.size()<size){
+                maxHeap.add(num[i]);
+                i++;
+            }else {
+                list.add(maxHeap.peek());
+                // 去掉最前面那个数字
+                int tmp = num[i-size];
+                maxHeap.remove(tmp);
+            }
+        }
+        // 添加最后一位元素
+        list.add(maxHeap.peek());
+        return list;
     }
 }

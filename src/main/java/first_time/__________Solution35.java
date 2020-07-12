@@ -1,4 +1,5 @@
-package first_time; /**
+package first_time;
+/**
  * @program: jianzhioffer
  * @description: 数组中的逆序对
  * @author: shishi
@@ -18,7 +19,7 @@ public class __________Solution35 {
             return 0;
         }
 
-        int res = mergeSort(array, 0, array.length-1) % 1000000007;
+        int res = mergeSort(array, 0, array.length - 1) % 1000000007;
         return res % 1000000007;
     }
 
@@ -29,8 +30,8 @@ public class __________Solution35 {
 
         int mid = (low + high) / 2;
 
-        int left = mergeSort(array, low, mid)% 1000000007;
-        int right = mergeSort(array, mid+1, high)% 1000000007;
+        int left = mergeSort(array, low, mid) % 1000000007;
+        int right = mergeSort(array, mid + 1, high) % 1000000007;
         return left + right + merge(array, low, mid, high);
     }
 
@@ -63,7 +64,7 @@ public class __________Solution35 {
             array[low++] = temp[i];
         }
 
-        return count% 1000000007;
+        return count % 1000000007;
 
     }
 
@@ -75,11 +76,6 @@ public class __________Solution35 {
 
         for (int i = len - 1; i >= 0; i--) {
             int num = array[i];
-            if (i - 1 >= 0 && array[i - 1] <= array[i]) {
-                count[i - 1] = count[i];
-                res += count[i - 1];
-                continue;
-            }
 
             for (int j = i - 1; j >= 0; j--) {
                 if (array[j] > num)

@@ -23,7 +23,7 @@ public class Solution5 {
 
     // 重点是这里，需要保证先进先出
     public int pop() {
-        // 把stack1中的所有元素都房贷stack2中
+        // 把stack1中的所有元素都放在stack2中
         while (!stack1.isEmpty()){
             stack2.push(stack1.pop());
         }

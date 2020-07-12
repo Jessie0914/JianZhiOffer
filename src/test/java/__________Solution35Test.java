@@ -6,8 +6,8 @@ public class __________Solution35Test {
     @Test
     public void inversePairs() {
         __________Solution35 solution35 = new __________Solution35();
-        int[] array = {1,2,3,4,5,6,7,0};
-        int i = solution35.InversePairs(array);
+        int[] array = {1,3,2,3,1};
+        int i = solution35.InversePairs1(array);
         System.out.println(i);
     }
 }
