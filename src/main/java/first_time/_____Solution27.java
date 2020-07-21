@@ -17,7 +17,7 @@ import java.util.*;
 public class _____Solution27 {
     public ArrayList<String> Permutation(String str) {
         ArrayList<String> res = new ArrayList<>();
-        if (str==null || str.length()==0) return res;
+        if (str == null || str.length() == 0) return res;
         HashSet<List<Character>> set = new HashSet<>();
         ArrayList<Character> list = new ArrayList<>();
         char[] chars = str.toCharArray();
@@ -25,10 +25,10 @@ public class _____Solution27 {
         recursion(used, chars, set, list);
 
         Iterator<List<Character>> iterator = set.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             List<Character> next = iterator.next();
             StringBuilder sb = new StringBuilder();
-            for (int i=0;i<next.size();i++){
+            for (int i = 0; i < next.size(); i++) {
                 sb.append(next.get(i));
             }
             res.add(sb.toString());
@@ -53,7 +53,7 @@ public class _____Solution27 {
                 recursion(used, chars, set, list);
 
                 // 回退一步
-                list.remove(list.size()-1);
+                list.remove(list.size() - 1);
                 used[i] = false;
             }
         }

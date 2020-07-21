@@ -45,7 +45,5 @@ public class _____Solution55 {
         }
 
         return p2;
-
-
     }
 }
