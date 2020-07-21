@@ -14,22 +14,22 @@ public class Solution13 {
     public void reOrderArray(int[] array) {
         int i = 0;
         while (i < array.length) {
-            if (array[i]%2==1)
+            if (array[i] % 2 == 1)
                 i++;
-            // 如果是偶数
+                // 如果是偶数
             else {
                 // 往后找第一个奇数
-                int j=i+1;
-                while (j<array.length){
-                    if (array[j]%2==0)
+                int j = i + 1;
+                while (j < array.length) {
+                    if (array[j] % 2 == 0)
                         j++;
-                    // 找到了第一个奇数
+                        // 找到了第一个奇数
                     else {
                         int temp = array[j];
                         // 把i到j的偶数都向后移
-                        int p=j;
-                        while (p>i){
-                            array[p] = array[p-1];
+                        int p = j;
+                        while (p > i) {
+                            array[p] = array[p - 1];
                             p--;
                         }
                         array[i] = temp;

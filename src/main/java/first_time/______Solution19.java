@@ -15,46 +15,46 @@ import java.util.ArrayList;
  * 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
  */
 public class ______Solution19 {
-    public ArrayList<Integer> printMatrix(int [][] matrix) {
+    public ArrayList<Integer> printMatrix(int[][] matrix) {
         ArrayList<Integer> list = new ArrayList<>();
-        if (matrix.length==0 || matrix[0].length==0) return list;
+        if (matrix.length == 0 || matrix[0].length == 0) return list;
 
         int up = 0;
-        int down = matrix.length-1;
+        int down = matrix.length - 1;
         int left = 0;
-        int right = matrix[0].length-1;
+        int right = matrix[0].length - 1;
 
-        while (true){
+        while (true) {
             // 最上面一行
-            for (int i=left;i<=right;i++){
+            for (int i = left; i <= right; i++) {
                 list.add(matrix[up][i]);
             }
             up++;
-            if (up>down)
+            if (up > down)
                 break;
 
             // 最右侧那一列
-            for (int i=up;i<=down;i++){
+            for (int i = up; i <= down; i++) {
                 list.add(matrix[i][right]);
             }
             right--;
-            if (right<left)
+            if (right < left)
                 break;
 
             // 最下面那一行
-            for (int i=right;i>=left;i--){
+            for (int i = right; i >= left; i--) {
                 list.add(matrix[down][i]);
             }
             down--;
-            if (down<up)
+            if (down < up)
                 break;
 
             // 最左边那一列
-            for (int i=down;i>=up;i--){
+            for (int i = down; i >= up; i--) {
                 list.add(matrix[i][left]);
             }
             left++;
-            if (left>right)
+            if (left > right)
                 break;
         }
 
