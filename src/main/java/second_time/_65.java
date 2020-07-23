@@ -45,7 +45,7 @@ public class _65 {
             return false;
 
         // 如果当前还未访问且是最后一个匹配，那么为true
-        if (!visited[i][j] && index==str.length-1 && chars[i][j] == str[str.length-1])
+        if (!visited[i][j] && index == str.length - 1 && chars[i][j] == str[str.length - 1])
             return true;
 
         // 否则，就上下左右四个方向继续匹配
@@ -55,13 +55,13 @@ public class _65 {
             if (inArea(i - 1, j) && helper(visited, chars, i - 1, j, str, index + 1))
                 return true;
             // 下
-            if (inArea(i+1,j)&& helper(visited,chars,i+1,j,str,index+1))
+            if (inArea(i + 1, j) && helper(visited, chars, i + 1, j, str, index + 1))
                 return true;
             // 左
-            if (inArea(i,j-1)&&helper(visited,chars,i,j-1,str,index+1))
+            if (inArea(i, j - 1) && helper(visited, chars, i, j - 1, str, index + 1))
                 return true;
             // 右
-            if (inArea(i,j+1)&&helper(visited,chars,i,j+1,str,index+1))
+            if (inArea(i, j + 1) && helper(visited, chars, i, j + 1, str, index + 1))
                 return true;
 
             // 都不匹配，则回退一步
@@ -73,7 +73,7 @@ public class _65 {
 
     // 判断有没有越界
     private boolean inArea(int i, int j) {
-        if (i>=0 && i<row && j>=0 && j<col)
+        if (i >= 0 && i < row && j >= 0 && j < col)
             return true;
         return false;
     }

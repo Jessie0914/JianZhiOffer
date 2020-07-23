@@ -2,7 +2,7 @@ package second_time;
 
 /**
  * @ClassName _55
- * @Description 链表中还的入口结点
+ * @Description 链表中环的入口结点
  * @Author shishi
  * @Date 2020/2/3 15:42
  **/

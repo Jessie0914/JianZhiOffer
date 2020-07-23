@@ -18,13 +18,13 @@ public class _41 {
         // 当i追上了j，就到了边界
         while (i < j) {
             int temp = (i + j) * (j - i + 1) / 2;
-            if (temp==sum){
+            if (temp == sum) {
                 ArrayList<Integer> list = new ArrayList<>();
-                for (int index = i; index<=j; index++)
+                for (int index = i; index <= j; index++)
                     list.add(index);
                 result.add(list);
                 i++;
-            }else if (temp<sum)
+            } else if (temp < sum)
                 j++;
             else
                 i++;
