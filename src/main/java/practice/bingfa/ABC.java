@@ -1,4 +1,4 @@
-package bingfa;
+package practice.bingfa;
 
 /**
  * @ClassName ABC

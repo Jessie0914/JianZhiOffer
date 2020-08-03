@@ -2,7 +2,7 @@ package practice;
 
 /**
  * @ClassName Sort
- * @Description TODO
+ * @Description 排序算法
  * @Author shishi
  * @Date 2020/2/27 17:22
  **/

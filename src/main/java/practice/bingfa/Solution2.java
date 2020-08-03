@@ -1,4 +1,4 @@
-package bingfa;
+package practice.bingfa;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
