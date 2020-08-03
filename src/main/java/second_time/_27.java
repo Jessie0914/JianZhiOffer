@@ -50,6 +50,7 @@ public class _27 {
                 // 先添加当前值
                 cur_list.add(chars[i]);
                 visited[i] = true;
+
                 helper(chars, visited, hashSet, cur_list);
 
                 // 回退一步、重置访问状态
